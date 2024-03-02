@@ -49,6 +49,7 @@ function addLeadingZero(count) {
 }
 
 function startCounting() {
+  timePicker.nextSibling.disabled = true;
   startBtn.disabled = true;
   const futureDate = flatPicker.selectedDates[0].getTime();
 
