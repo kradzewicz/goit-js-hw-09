@@ -41,11 +41,11 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-function addLeadingZero(value) {
-  value.days = String(value.days).padStart(2, '0');
-  value.hours = String(value.hours).padStart(2, '0');
-  value.minutes = String(value.minutes).padStart(2, '0');
-  value.seconds = String(value.seconds).padStart(2, '0');
+function addLeadingZero(count) {
+  count.days = String(count.days).padStart(2, '0');
+  count.hours = String(count.hours).padStart(2, '0');
+  count.minutes = String(count.minutes).padStart(2, '0');
+  count.seconds = String(count.seconds).padStart(2, '0');
 }
 
 function startCounting() {
